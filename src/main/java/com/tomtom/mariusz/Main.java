@@ -1,4 +1,5 @@
 package com.tomtom.mariusz;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,32 +16,36 @@ public class Main {
      */
     public static void main(String[] args) {
         //cw.1
-        /*
-         * int[] tab = new int[BIG_NUMBER]; for(int i=0;i<BIG_NUMBER;i++){
-         * tab[i]=i; }
-         */
+//        int[] tab = new int[BIG_NUMBER];
+//        for (int i = 0; i < BIG_NUMBER; i++) {
+//            tab[i] = i;
+//        }
+         
         //cw.2
-        /*
-         * Integer[] tab = new Integer[BIG_NUMBER]; for(int
-         * i=0;i<BIG_NUMBER;i++){ tab[i]=new Integer(i); }
-         */
+//        Integer[] tab = new Integer[BIG_NUMBER];
+//        for (int i = 0; i < BIG_NUMBER; i++) {
+//            tab[i] = new Integer(i);
+//        }
+
         //cw.3
-        /*
-         * ArrayList<Integer> myCollection = new ArrayList<Integer>();
-         * myCollection.ensureCapacity(BIG_NUMBER); //or List<Integer>
-         * myCollection = new ArrayList<Integer>(BIG_NUMBER); for(int
-         * i=0;i<BIG_NUMBER;i++){ myCollection.add(new Integer(i)); }
-         */
-        //cw.4
-        /*
-         * Set<Integer> myCollection = new HashSet<Integer>(BIG_NUMBER); for(int
-         * i=0;i<BIG_NUMBER;i++){ myCollection.add(new Integer(i)); }
-         */
-        //cw.5
-        Map<Integer, Integer> myCollection = new HashMap<Integer, Integer>(BIG_NUMBER);
+        ArrayList<Integer> myCollection = new ArrayList<Integer>(BIG_NUMBER);
+        //myCollection.ensureCapacity(BIG_NUMBER); //or List<Integer>
+        myCollection = new ArrayList<Integer>(BIG_NUMBER);
         for (int i = 0; i < BIG_NUMBER; i++) {
-            myCollection.put(new Integer(i), null);
+            myCollection.add(new Integer(i));
         }
+
+        //cw.4
+        //        Set<Integer> myCollection = new HashSet<Integer>(BIG_NUMBER);
+        //        for (int i = 0; i < BIG_NUMBER; i++) {
+        //            myCollection.add(new Integer(i));
+        //        }
+
+        //cw.5
+        //        Map<Integer, Integer> myCollection = new HashMap<Integer, Integer>();
+        //        for (int i = 0; i < BIG_NUMBER; i++) {
+        //            myCollection.put(new Integer(i), null);
+        //        }
 
         long maxMemory = Runtime.getRuntime().maxMemory();
         System.out.println("maxMemory  =" + maxMemory / 1024);
