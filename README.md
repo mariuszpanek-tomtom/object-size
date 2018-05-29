@@ -1,1 +1,2 @@
-ankieta: https://docs.google.com/forms/d/1QZQgsjpFzHp13T-eAOEs642xdDF8UuaBKaR_j3ccmKE/viewform
+object-size in Java / object vs primitive,
+code used in presentation
